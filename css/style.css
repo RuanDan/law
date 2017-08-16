@@ -1,0 +1,165 @@
+@charset "utf-8";
+body, p, h1, h2,ul, ol, li, input{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+	height: 100%;
+}
+body{
+	background: url(../img/bg.jpg) center center no-repeat;
+	background-attachment: fixed;
+	font: 18px/1.5 'Microsoft Yahei',"Helvetica Neue", Helvetica, STHeiTi, Arial,sans-serif;
+}
+ul,li{
+	list-style: none;
+}
+.page-hd{
+    filter:alpha(opacity=4 finishopacity=4 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=black,endcolorstr=white,gradientType=0);	
+    -ms-filter:alpha(opacity=4 finishopacity=4 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=black,endcolorstr=white,gradientType=0);	
+	background:none; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, rgba(51, 51, 51, 0.04), rgba(255, 255, 255, 0.04));  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(51, 51, 51, 0.04)), to(rgba(255, 255, 255, 0.04)));  
+	height: 120px;
+	text-align: center;
+	position: relative;
+	padding: 0 40px;
+}
+.page-hd .logo{
+	display: inline-block;
+	margin-top: 30px;
+	width: 528px;
+}
+.text-gradient{
+	filter:alpha(opacity=99 finishopacity=99 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=white,endcolorstr=gray,gradientType=0);	
+    -ms-filter:alpha(opacity=99 finishopacity=99 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=white,endcolorstr=gray,gradientType=0);	
+	background:none; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(124, 124, 124, 0.99));  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(124, 124, 124, 0.99)));
+	-webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -o-background-clip:text;
+    -o-text-fill-color:transparent;
+}
+.page-hd .time{
+	color: #fff;
+	font-size: 28px;
+	position: absolute;
+	right: 0;
+	margin-right: 40px;
+	bottom: 10px;
+}
+.page-cnt{
+	padding: 0 40px 20px;
+	color: #e9e9e9;
+}
+.page-cnt h1{
+	font-size:28px;
+	color: #fff;
+	margin: 12px 0;
+}
+.page-cnt .item-cnt{
+	border-radius: 3px;
+	background: url(../img/bg_transparent.png);
+	position: relative;
+}
+.page-cnt ul{
+	padding: 10px 40px 15px;
+}
+.item-cnt li{
+	border-top:1px solid #3b3a39; 
+	font-size: 0;
+}
+.item-cnt li span{
+	display: inline-block;
+	width: 25%;
+	font-size: 16px;
+	text-align: center;
+	color: #999;
+	padding: 5px 0;
+}
+.item-cnt .item-cnt-hd{
+	border: 0;
+}
+.item-cnt .item-cnt-hd span{
+	font-size: 18px;
+	color: #fffefe;
+}
+.item-cnt .desc{
+	color: #fffefe;
+}
+.highlight{
+	background: url(../img/bg_transparent.png);
+}
+#lawServiceLine,#accessDataLine{
+	height: 200px;
+}
+.item-cnt .tip{
+	color: #e9e9e9;
+	position: absolute;
+	right: 0;
+	margin: 12px 40px;
+}
+.deal li span{
+	width: 11%;
+}
+.deal .desc{
+	width: 23%;
+}
+#lawyer,#notarial{
+	cursor: pointer;
+}
+#lawyer-table,#notarial-table{
+	display: none;
+}
+.notarial li span{
+	width: 6.5%;
+}
+.notarial .desc{
+	width: 15.5%;
+	font-size: 15px;
+}
+.pie{
+/*	padding: 20px 0;*/
+	width: 100%;
+}
+.business-btn{
+	font-size: 28px;
+	float: right;
+	margin-top: 15px;
+	cursor: pointer;
+	position: relative;
+	z-index: 9999999;
+}
+.business-btn a{
+	margin-left: 20px;
+}
+.business-btn .current{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #bbb;
+}
+.pie-wrap{
+	position: relative;
+}
+#lawOfficePie,.pie-cell{
+	height: 850px;
+	position: absolute;
+	width: 100%;
+	top:20px;
+}
+#sourcePie,#organizationBar,#timeBar{
+	display: none;
+}
+#timeBar{
+	height: 600px;
+}
+.no-mrg{
+	margin: 0;
+}
+.table-box p{
+	padding: 5px 0;
+}
+.item-select-btn{
+	cursor: pointer;
+	margin-left: 20px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div class="page-hd" id="width">
+			<img class="logo" src="img/logo.png" />
+			<p class="time text-gradient">2016年11月4日 15:35:25</p>
+		</div>
+		<!-- 内容区 -->
+		<div class="page-cnt">
+			<!-- 受理数据监控 -->
+			<div class="item">
+				<h1 class="text-gradient">受理数据监控（本月）</h1>
+				<ul class="item-cnt deal">
+					<li class="item-cnt-hd">
+						<span class="desc"></span><span>网站</span><span>短信</span><span>12348</span><span>电话</span><span>微信</span><span>平台</span><span>其他</span>
+					</li>
+					<li class="highlight">
+						<span class="desc">管理机构（司法局）</span><span>15</span><span>21</span><span>56</span><span>37</span><span>66</span><span>45</span><span>7</span>
+					</li>
+					<li>
+						<span class="desc" id="lawyer">律师事务所</span><span>23</span><span>17</span><span>32</span><span>18</span><span>49</span><span>27</span><span>3</span>
+					</li>
+					<li class="highlight">
+						<span class="desc" id="notarial">公证处</span><span>31</span><span>19</span><span>41</span><span>22</span><span>59</span><span>34</span><span>16</span>
+					</li>
+					<!--<li>
+						<span class="desc">机构N</span><span>300</span><span>8999</span><span>21523</span>
+					</li>-->
+				</ul>
+				<div class="pie">
+					<p class="text-gradient business-btn" id="tabBtn"><a href="javascript:;" id="source">来源饼图</a><a href="javascript:;" id="organization">机构柱状图</a><a href="javascript:;" id="time">时间柱状图</a><a href="javascript:;" id="business">业务饼图</a></p>
+					<div class="pie-wrap" id="pieWrap">						
+						<div id="sourcePie" class="pie-cell"></div>
+						<div id="organizationBar" class="pie-cell"></div>
+						<div id="timeBar" class="pie-cell"></div>
+						<div id="lawOfficePie" class="pie-cell"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 律师所数据 -->
+			<div class="item" id="lawyer-table">
+				<h1 class="text-gradient">律师所数据监控（本月）</h1>
+				
+			</div>
+			<!-- 公证处数据 -->
+			<div class="item" id="notarial-table">
+				<h1 class="text-gradient">公证处数据监控（本月）</h1>
+				<ul class="item-cnt notarial">
+					<li class="item-cnt-hd">
+						<span class="desc"></span><span>劳动关系</span><span>合同纠纷</span><span>交通事故</span><span>不动产</span><span>婚姻关系</span><span>继承关系</span><span>律师咨询</span><span>企业管理</span><span>刑事案件</span><span>医疗纠纷</span><span>保险理赔</span><span>民事诉讼</span><span>法律事务</span>
+					</li>
+					<li class="highlight">
+						<span class="desc">襄阳市襄阳公证处</span><span>388</span><span>412</span><span>314</span><span>423</span><span>341</span><span>354</span><span>651</span><span>314</span><span>564</span><span>279</span><span>345</span><span>621</span><span>410</span>
+					</li>
+					<li>
+						<span class="desc">襄阳市正天公证处</span><span>415</span><span>312</span><span>145</span><span>412</span><span>362</span><span>603</span><span>401</span><span>458</span><span>347</span><span>416</span><span>257</span><span>541</span><span>357</span>
+					</li>
+					<li>
+						<span class="desc">襄阳市汉江公证处</span><span>214</span><span>335</span><span>510</span><span>345</span><span>301</span><span>512</span><span>329</span><span>364</span><span>326</span><span>433</span><span>310</span><span>465</span><span>304</span>
+					</li>
+					<li class="highlight">
+						<span class="desc">襄阳市长信公证处</span><span>365</span><span>251</span><span>304</span><span>337</span><span>416</span><span>362</span><span>411</span><span>230</span><span>436</span><span>302</span><span>502</span><span>325</span><span>412</span>
+					</li>
+					<li>
+						<span class="desc">枣阳市公证处</span><span>403</span><span>517</span><span>325</span><span>296</span><span>265</span><span>432</span><span>366</span><span>415</span><span>325</span><span>468</span><span>364</span><span>421</span><span>360</span>
+					</li>
+					<li class="highlight">
+						<span class="desc">宜城市公证处</span><span>371</span><span>319</span><span>302</span><span>501</span><span>463</span><span>287</span><span>324</span><span>297</span><span>436</span><span>504</span><span>314</span><span>361</span><span>463</span>
+					</li>
+					<li>
+						<span class="desc">老河口市公证处</span><span>306</span><span>430</span><span>292</span><span>165</span><span>348</span><span>441</span><span>236</span><span>374</span><span>403</span><span>361</span><span>245</span><span>511</span><span>364</span>
+					</li>
+					<li class="highlight">
+						<span class="desc">南漳县公证处</span><span>276</span><span>481</span><span>375</span><span>296</span><span>360</span><span>227</span><span>346</span><span>684</span><span>258</span><span>246</span><span>431</span><span>361</span><span>439</span>
+					</li>
+					<li>
+						<span class="desc">古城县公证处</span><span>198</span><span>362</span><span>310</span><span>244</span><span>458</span><span>354</span><span>314</span><span>348</span><span>406</span><span>361</span><span>362</span><span>342</span><span>327</span>
+					</li>
+					<li class="highlight">
+						<span class="desc">保康县公证处</span><span>267</span><span>426</span><span>264</span><span>371</span><span>294</span><span>306</span><span>267</span><span>431</span><span>531</span><span>471</span><span>347</span><span>416</span><span>401</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+	    <script src="js/source.js"></script>
+	    <script src="js/organization.js" ></script>
+		<script>
+	    	var oLawyer=document.getElementById('lawyer');
+	    	var oNotarial=document.getElementById('notarial');
+	    	var oLawyerTable=document.getElementById('lawyer-table');
+	    	var oNotarialTable=document.getElementById('notarial-table');
+	    	var oTest=document.getElementById('testWrap');
+	    	
+	    	function show(obj,s,h,cb){//s代表显示的元素，h代表隐藏的元素
+	    		cb = cb?cb:function(){};
+	    		obj.onclick=function(){
+	    			$('.pie-cell').hide();
+	    			h.style.display = "none";
+	    			s.style.display = "block";
+	    			cb();
+	    		}
+	    		$('#tabBtn a').on('click',function(){
+	    			oLawyerTable.style.display = "none";
+ 	    			oNotarialTable.style.display = "none";
+	    			$('#pieWrap').children().hide();
+	    			var oIndex = $(this).index();
+	    			$('#pieWrap').children().eq(oIndex).show();
+	    			drawChart1();
+	    			drawChart2();
+	    			drawChart3();
+	    			drawChart();
+	    		})
+	    	}
+	    	show(oLawyer,oLawyerTable,oNotarialTable,function(){
+	    		drawChart();
+	    	});
+	    	show(oNotarial,oNotarialTable,oLawyerTable);
+//	    	$('#lawyer').click(function(){
+//	    		$('#testWrap canvas').width($('#width').width());
+//	    		alert($('#testWrap canvas').width());
+//	    	});
+			window.onload = function(){
+				$('#sourcePie').show();
+				drawChart1();
+			}
+	    </script>
+	</body>
+</html>

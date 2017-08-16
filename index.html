@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div class="page-hd">
+			<img class="logo" src="img/logo.png" />
+			<p class="time text-gradient">2016年11月4日 15:35:25</p>
+		</div>
+		<!-- 内容区 -->
+		<div class="page-cnt">
+			<!-- 平台访问数据 -->
+			<div class="item">
+				<a class="text-gradient business-btn no-mrg" href="data.html">重要参考数据</a>
+				<h1 class="text-gradient">平台访问数据</h1>
+				<ul class="item-cnt">
+					<li class="item-cnt-hd"><span></span><span>在线律师</span><span>访问数据</span><span>服务数据</span></li>
+					<li class="highlight"><span class="desc">本月</span><span>150</span><span>152030</span><span>120100</span></li>
+					<li><span class="desc">本周</span><span>290</span><span>85962</span><span>2500</span></li>
+					<li class="highlight"><span class="desc">昨天</span><span>640</span><span>15201</span><span>52960</span></li>
+					<li><span class="desc">今天</span><span>300</span><span>8999</span><span>21523</span></li>
+				</ul>
+			</div>
+			<!-- 法律服务数据 -->
+			<div class="item">
+				<h1 class="text-gradient"><a href="table.html">法律服务数据（本月）</a></h1>
+				<div class="item-cnt">
+					<!-- 图表说明 -->
+					<span class="tip">咨询数量</span>
+					<!-- 图表 -->
+					<div id="lawServiceLine"></div>
+				</div>
+			</div>
+			<!-- 平台访问数据 -->
+			<div class="item">
+				<h1 class="text-gradient">平台访问数据（本月）</h1>
+				<div class="item-cnt">
+					<!-- 图表说明 -->
+					<span class="tip">访问数据</span>
+					<!-- 图表 -->
+					<div id="accessDataLine"></div>
+				</div>
+			</div>
+		</div>
+		<!-- ECharts单文件引入 -->
+    <script src="js/echarts.js"></script>
+    <script src="js/lawService.js"></script>
+    <script src="js/accessData.js"></script>
+	</body>
+</html>
